@@ -1,6 +1,22 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  concern :api_base do
+      post '/user/create', action: :create, controller: 'user'
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  scope :api do
+    namespace :v1 do
+      concerns :api_base
+    end
+
+    namespace :v2 do
+      concerns :api_base
+    end
+
+    namespace :v3 do
+      concerns :api_base
+    end
+  end
+
 end
+
