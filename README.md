@@ -1,6 +1,6 @@
 # Ruby on Rails Patterns: Service Objects and Interactors
 
-![logo](https://d2mk45aasx86xg.cloudfront.net/Use_of_Rails_Service_Object_3b34e030d0.webp)
+![logo](https://uploads.toptal.io/blog/image/125882/toptal-blog-image-1523525409513-9054279480e1add58d38bfb528a032ed.png)
 
 ## About The Project
 
